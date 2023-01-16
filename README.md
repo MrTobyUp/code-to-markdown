@@ -4,7 +4,6 @@ Provides the funcionality to create a markdown file from the content of all file
 ## How to run:
 ```
 python merge_files.py <path to the desired directory>
-
 ```
 
 
