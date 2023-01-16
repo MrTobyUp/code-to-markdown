@@ -6,4 +6,5 @@ Provides the funcionality to create a markdown file from the content of all file
 python merge_files.py <path to the desired directory>
 ```
 
-
+## Output
+An 'merged.md' file will be created in the directory where the script was called.
