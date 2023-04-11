@@ -14,8 +14,9 @@ def copy_content(dir_path):
                     # write the contents of each file to the destination file
                     with open(destination_file, 'a') as outfile:
                         file_name = file_path.split("\\")[-1]
-                        outfile.write(file_name + ":\n```c\n")
-                        outfile.write(infile.read() + "```\n\n")
+                        outfile.write(file_name + ": \n\n ```c\n")
+                        outfile.write(infile.read() + "```\n" +
+                            "<div style=\"page-break-after: always;\"></div>\n")
             elif os.path.isdir(file_path):
                 copy_content(file_path)
 
