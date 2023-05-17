@@ -1,6 +1,8 @@
 import os
 import sys
 
+FILE_TYPE = "java" # <----------specify file type here!!!
+
 # specify the destination file
 destination_file = './merged.md'
 
@@ -14,7 +16,7 @@ def copy_content(dir_path):
                     # write the contents of each file to the destination file
                     with open(destination_file, 'a') as outfile:
                         file_name = file_path.split("\\")[-1]
-                        outfile.write(file_name + ": \n\n ```c\n")
+                        outfile.write(file_name + ": \n\n ```" + FILE_TYPE + "\n")
                         outfile.write(infile.read() + "```\n" +
                             "<div style=\"page-break-after: always;\"></div>\n")
             elif os.path.isdir(file_path):
