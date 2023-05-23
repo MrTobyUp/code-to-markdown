@@ -7,7 +7,7 @@ Provides the funcionality to create a markdown file from the content of all file
 - Run the following command:
 
 ```
-python create_markdown.py <path to the desired directory>
+python create_markdown.py --dir <path to the desired directory> --lang <programming language> --output <name of the output file>
 ```
 
 ## Output
