@@ -1,7 +1,7 @@
 import os
 import sys
 
-FILE_TYPE = "java" # <----------specify file type here!!!
+FILE_TYPE = "c++" # <----------specify file type here!!!
 
 # specify the destination file
 destination_file = './merged.md'
