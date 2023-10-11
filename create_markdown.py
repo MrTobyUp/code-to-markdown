@@ -27,6 +27,6 @@ try:
 
     with open(destination_file, 'w') as outfile:
         copy_content(directory)
-        print("The file was created successfully: " + directory + destination_file)
+        print("The file was created successfully: " + destination_file)
 except:
     print("No valid destination directory passed via command line argument!")
